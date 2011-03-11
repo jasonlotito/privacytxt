@@ -19,3 +19,41 @@ any means of allowing users a one-click access to their privacy settings page
 for a website.
 
 This is what privacy.txt hopes to solve.
+
+How it works
+------------
+
+Make accessible a privacy.txt file in the root directory of your site.  For
+example:
+
+<pre>http://example.org/privacy.txt</pre>
+
+Fill this file with information as described below.
+
+# Privacy Policy Location
+
+<code>Privacy Policy: http://www.example.org/Policies/Privacy</code>
+
+This will start wtih 'Privacy Policy: ' and end with the URL to the page
+containing the privacy policy of the website.  This page should allow users
+to discover the privacy policy in languages the site supports.
+
+# Privacy Settings
+
+<code>Privacy Settings: http://www.example.org/Policies/Privacy/Settings</code>
+
+This will start with 'Privacy Settings: ' and end with the URL to the page
+a user can access to adjust any privacy settings on the site.  All privacy
+settings need not be placed on this single page, but privacy settings should
+be accessible directly from this page.
+
+# Policy Settings
+
+<code>Policy, [Policy Name]: http://www.example.org/Policies/Terms</code>
+
+This will start with 'Policy, '.  After this, you'll enter the name of the policy.
+For example, you can make the policy name 'Terms & Conditions'.  After the name
+of the policy, you include ': ' plus the URL to the policy.  A policy for Terms &
+Conditions would look like the following.
+
+<code>Policy, Terms & Conditions: http://www.example.org/Policies/Terms</code>
