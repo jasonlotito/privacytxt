@@ -30,7 +30,7 @@ example:
 
 Fill this file with information as described below.
 
-# Privacy Policy Location
+### Privacy Policy Location
 
 <code>Privacy Policy: http://www.example.org/Policies/Privacy</code>
 
@@ -38,7 +38,7 @@ This will start wtih 'Privacy Policy: ' and end with the URL to the page
 containing the privacy policy of the website.  This page should allow users
 to discover the privacy policy in languages the site supports.
 
-# Privacy Settings
+### Privacy Settings
 
 <code>Privacy Settings: http://www.example.org/Policies/Privacy/Settings</code>
 
@@ -47,7 +47,7 @@ a user can access to adjust any privacy settings on the site.  All privacy
 settings need not be placed on this single page, but privacy settings should
 be accessible directly from this page.
 
-# Policy Settings
+### Policy Settings
 
 <code>Policy, [Policy Name]: http://www.example.org/Policies/Terms</code>
 
