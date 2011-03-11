@@ -20,8 +20,8 @@ for a website.
 
 This is what privacy.txt hopes to solve.
 
-How it works
-------------
+How it works - Site Side
+------------------------
 
 Make accessible a privacy.txt file in the root directory of your site.  For
 example:
@@ -57,3 +57,25 @@ of the policy, you include ': ' plus the URL to the policy.  A policy for Terms 
 Conditions would look like the following.
 
 <code>Policy, Terms & Conditions: http://www.example.org/Policies/Terms</code>
+
+How it works - Browser Side
+---------------------------
+
+There are two ways browsers can discover a privacy.txt file.
+
+### Link Tag
+
+Using a link tag in the sites head HTML tag.
+
+<code>&lt;link rel="privacytxt" href="privacy.txt"&gt;</code>
+
+In this case, the href points to the privacy.txt file.
+
+### Auto Discovery
+
+Simply search for the privacy.txt file in the root path.
+
+<code>http://example.org/privacy.txt</code>
+
+
+
