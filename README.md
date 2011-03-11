@@ -8,6 +8,21 @@ accounts, privacy policies, and other legal aspects.  By setting up a simple way
 for users and browser to discover the privacy policies, settings, and terms and
 conditions of a website, users will be more informed of privacy decisions.
 
+The Basic Problem
+-----------------
+Currently privacy is a mess on the web.  Each site implements their own measures
+of display privacy policies, have different locations for privacy settings, and
+generally don't make this easily discoverable for users.  Privacy is such an
+important concern, but few people want to do the work to implement it.  Privacy
+debacles such as Google Buzz and the constant problems with Facebook hilight that
+even even large organizations are prone to these problems.
+
+privacy.txt wants to help resolve this problem by creating a human and machine
+readable text file that can be accessed and discovered.  This will provide
+simple information that users can really use to discoer privacy policies, how
+to change their settings, and other policies regarding the websites they are
+visiting in a common, standardized way.
+
 Make the browsers better
 ------------------------
 
@@ -78,4 +93,24 @@ Simply search for the privacy.txt file in the root path.
 <code>http://example.org/privacy.txt</code>
 
 
+Implementation Browser Side
+---------------------------
 
+The most difficult part is implementing this into the browsers.  A browser will
+need to make it easy for users to discover the privacy settings and information.
+
+The Privacy Policy and Privacy Settings parameters above allow browser makers to
+easily discover links to privacy information, and create UI elements witin the
+browser akin to SSL certificates.  Giving users an easy way to access privacy
+information and settings on the web.
+
+the Policy parameter allows browsers to also read additional policies, and make
+them easily available.
+
+Future Plans
+------------
+
+The possibility exists for allowing sites to describe the privacy settings they
+provide to their users.  This would allow users to fill in privacy settings in
+simple environment designed by the browser makers but using the information
+provided by the website.
