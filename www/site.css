@@ -1,0 +1,140 @@
+body {
+	font-family: 'Helvetica Neue', Helvetica, Trebuchet, Arial, sans-serif;
+	background-color: #444;
+	color: #eee;
+}
+
+body {
+    margin: 0 auto;
+}
+body > * {
+    width: 680px;
+}
+body > header {
+    height: 50px;
+    margin-top: 10px;
+}
+aside {
+    top: 20px;
+    position: relative;
+    left: 690px;
+    background-color: #ffd;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-border-radius-topright: 200px;
+    -moz-border-radius-bottomright: 150px;
+    -moz-border-radius-bottomleft: 50px;
+    -moz-border-radius-topleft: 150px;
+    padding: 40px 20px 20px 20px;
+    border: 0;
+    width: 200px;
+    height: 180px;
+    color: #444;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+nav {
+    top: 20px;
+    position: relative;
+    left: 690px;
+    background-color: #dfd;
+    -webkit-border-radius: 20px;
+    -moz-border-radius-bottomright: 200px;
+    -moz-border-radius-topright: 150px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-bottomleft: 150px;
+    padding: 20px;
+    border: 0;
+    width: 200px;
+    height: 200px;
+}
+nav a {
+    display: block;
+    color: #444;
+}
+header, footer {
+    margin: 0 10px;
+}
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin: 10px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #eee;
+    color: #444;
+    padding: 20px;
+    width: 640px;
+}
+section p a {
+    color: #444;
+}
+section p a:hover {
+    text-decoration: underline;
+}
+#privacytxt {
+    background-color: #ffd; 
+    -moz-border-radius-topright: 100px  ;
+}
+#betterbrowsers {
+    background-color: #dfd;
+    -moz-border-radius-bottomright: 40px;
+}
+#whatsitesneedtodo {
+    -moz-border-radius-topright: 40px;
+    background-color: #fff;
+}
+#whatsitesneedtodo nav {
+    float: right;
+    left: 270px;
+    top: -50px;
+    background-color: #dff;
+    height: 200px;
+    margin-left: -200px;
+}
+
+#idea, #theproblem {
+    height: 200px;
+}
+#idea {
+    background-color: #dff;
+    -moz-border-radius-topright: 100px;
+    -moz-border-radius-bottomright: 40px;
+}
+#theproblem {
+    background-color: #fdd;
+    -moz-border-radius-bottomright: 100px;
+    -moz-border-radius-topright: 40px;
+}
+#idea h2, #theproblem h2 {
+    text-align: left;
+    margin-right: 40px;
+}
+#idea p, #theproblem p {
+    line-height:1.5em;
+}
+
+a {
+    color: #eee;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
+
+pre {
+    border: 0;
+    border-radius: 10px;
+    background-color: #444;
+    color: #0e0;
+    font-family: courier, mono;
+    font-size: .8em;
+    padding: 10px;
+    white-space: pre;
+}

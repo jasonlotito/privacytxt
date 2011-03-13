@@ -3,13 +3,27 @@
 <head>
 <title>privacy.txt - Making privacy easier on the web</title>
 <link rel="stylesheet" href="site.css">
+<link rel="privacytxt" href="privacy.txt">
 </head>
 <body>
 	<header>
 		<h1>privacy.txt</h1>
+		<aside>
+		<p>Demand better privacy declaration rather than wait for those abusing it to
+			change their ways</p>	
+		</aside>
+		<nav>
+			<a href="#idea">The Idea</a>
+			<a href="#theproblem">The Problem</a>
+			<a href="#privacytxt">privacy.txt</a>
+			<a href="#betterbrowsers">A Better Web</a>
+			<a href="#whatsitesneedtodo">What sites can do</a>
+			<a href="#whatbrowsersneedtodo">What browsers can do</a>
+			<a href="#thefuture">The Future</a>
+		</nav>
 	</header>
-
-	<section>
+	
+	<section id="idea">
 	<h2>The Idea</h2>
 	<p>The essential idea behind privacytxt.org is to create a system where it's easy
 	for browsers and users to discover the privacy information about websites. This
@@ -19,7 +33,7 @@
 	conditions of a website, users will be more informed of privacy decisions.</p>
 	</section>
 	
-	<section>
+	<section id="theproblem">
 	<h2>The Basic Problem</h2>
 	<p>Currently privacy is a mess on the web.  Each site implements their own measures
 	of display privacy policies, have different locations for privacy settings, and
@@ -27,8 +41,10 @@
 	important concern, but few people want to do the work to implement it.  Privacy
 	debacles such as Google Buzz and the constant problems with Facebook hilight that
 	even even large organizations are prone to these problems.</p>
-
-
+	</section>
+	
+	<section id="privacytxt">
+	<h2>privacy.txt</h2>
 	<p>privacy.txt wants to help resolve this problem by creating a human and machine
 	readable text file that can be accessed and discovered.  This will provide
 	simple information that users can really use to discoer privacy policies, how
@@ -36,7 +52,7 @@
 	visiting in a common, standardized way.</p>
 	</section>
 	
-	<section>
+	<section id="betterbrowsers">
 	<h2>Make the browsers better</h2>
 
 	<p>Browsers currently inform users about the security level of a site through the
@@ -49,8 +65,18 @@
 	<p>This is what privacy.txt hopes to solve.</p>
 	</section>
 	
-	<section>
-	<h2>How it works - Site Side</h2>
+	<section id="whatsitesneedtodo">
+		<h2>How it works - Site Side</h2>
+		<nav>
+			<a href="#stprivacypolicy">Privacy Policy</a>
+			<a href="#stprivacysettings">Privacy Settings</a>
+			<a href="#stpolicysettings">Policy Settings</a>
+			<a href="#stcontactinformation">Contact Information</a>
+			<a href="#stpolicydocumentation">Policy Documentation</a>
+			<a href="#sample">Sample</a>
+		</nav>
+		
+	
 
 	<p>Make accessible a privacy.txt file in the root directory of your site.  For
 	example:</p>
@@ -59,26 +85,26 @@
 
 	<p>Fill this file with information as described below.</p>
 
-	<h3>Privacy Policy Location</h3>
+	<h3 id="stprivacypolicy">Privacy Policy Location</h3>
 
-	<p><code>Privacy Policy: http://www.example.org/Policies/Privacy</code></p>
+	<p><pre>Privacy Policy: http://www.example.org/Policies/Privacy</pre></p>
 
 	<p>This will start wtih 'Privacy Policy: ' and end with the URL to the page
 	containing the privacy policy of the website.  This page should allow users
 	to discover the privacy policy in languages the site supports.</p>
 
-	<h3>Privacy Settings</h3>
+	<h3 id="stprivacysettings">Privacy Settings</h3>
 
-	<p><code>Privacy Settings: http://www.example.org/Policies/Privacy/Settings</code></p>
+	<p><pre>Privacy Settings: http://www.example.org/Policies/Privacy/Settings</pre></p>
 
 	<p>This will start with 'Privacy Settings: ' and end with the URL to the page
 	a user can access to adjust any privacy settings on the site.  All privacy
 	settings need not be placed on this single page, but privacy settings should
 	be accessible directly from this page.</p>
 
-	<h3>Policy Settings</h3>
+	<h3 id="stpolicysettings">Policy Settings</h3>
 
-	<p><code>Policy, [Policy Name]: http://www.example.org/Policies/Terms</code></p>
+	<p><pre>Policy, [Policy Name]: http://www.example.org/Policies/Terms</pre></p>
 
 	<p>This will start with 'Policy, '.  After this, you'll enter the name of the policy.
 	For example, you can make the policy name 'Terms &amp; Conditions'.  After the name
@@ -86,8 +112,41 @@
 
 	Conditions would look like the following.</p>
 
-	<p><code>Policy, Terms &amp; Conditions: http://www.example.org/Policies/Terms</code></p>
+	<p><pre>Policy, Terms &amp; Conditions: http://www.example.org/Policies/Terms</pre></p>
+	
+	<h3 id="stcontactinformation">Contact Information</h3>
+	
+	<p><pre>Contact, [Policy Name]: [Contact Name] &lt;[Contact Email Address]></pre></p>
+	
+	<p>Each policy should have a contact email address that will point to the person 
+	responsible for privacy issues on the website.  This email address may go to more
+	than one individual as long as everyone receiving can react appropriately.</p>
+	
+	<p>Example:</p>
+	
+	<p><pre>Contact, Privacy Policy: Jason Lotito &lt;jasonlotito@gmail.com&gt;</pre></p>
+	
+	<h3 id="stpolicydocumentation">Policy Documentation</h3>
+	
+	<p>The actual policies may be inserted into privacy.txt.</p>
+	
+	<p><pre>= [Policy Name] =
+[Policy Information]
+= [Policy Name] =</pre></p>
 
+	<p><kbd>= [Policy Name] =</kbd> starts and ends the policy block.  Since each policy 
+		is a unique name, you can only have a single start and end for each policy.  
+		Between the two markers, you include the full text of the policy.</p>
+		
+		
+	<h3 id="sample">Sample</h3>
+
+	<p>privacytxt.org has its own <a href="privacy.txt">privacy.txt</a> file that you can
+	use as a working example.</p>
+		
+	</section>
+	
+	<section id="whatbrowsersneedtodo">
 	<h2>How it works - Browser Side</h2>
 
 	<p>There are two ways browsers can discover a privacy.txt file.</p>
@@ -96,7 +155,7 @@
 
 	<p>Using a link tag in the sites head HTML tag.</p>
 
-	<p><code>&lt;link rel="privacytxt" href="privacy.txt"&gt;</code></p>
+	<p><pre>&lt;link rel="privacytxt" href="privacy.txt"&gt;</pre></p>
 
 	<p>In this case, the href points to the privacy.txt file.</p>
 
@@ -104,11 +163,9 @@
 
 	<p>Simply search for the privacy.txt file in the root path.</p>
 
-	<p><code>http://example.org/privacy.txt</code></p>
-	</section>
-	
-	<section>
-	<h2>Implementation Browser Side</h2>
+	<p><pre>http://example.org/privacy.txt</pre></p>
+		
+	<h3>Implementation Browser Side</h3>
 
 	<p>The most difficult part is implementing this into the browsers.  A browser will
 	need to make it easy for users to discover the privacy settings and information.</p>
@@ -118,11 +175,13 @@
 	browser akin to SSL certificates.  Giving users an easy way to access privacy
 	information and settings on the web.</p>
 
-	<p>the Policy parameter allows browsers to also read additional policies, and make
+	<p>The Policy parameter allows browsers to also read additional policies, and make
 	them easily available.</p>
+	
+
 	</section>
 	
-	<section>
+	<section id="thefuture">
 	<h2>Future Plans</h2>
 
 	<p>The possibility exists for allowing sites to describe the privacy settings they
@@ -131,6 +190,9 @@
 	provided by the website.</p>
 	</section>
 	
+	<footer>
+		<p><a href="mailto:jasonlotito@gmail.com">jasonlotito@gmail.com</a></p>
+	</footer>
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+Privacy Policy: http://www.privacytxt.org/privacy.txt
+Privacy Settings: no
+Contact, Privacy Policy: Jason Lotito <jasonlotito@gmail.com>
+
+= Privacy Policy =
+This site is a basic HTML page, and doesn't store any information about a user beyond
+basic logging information.  We do not store any cookies, and do not link to any services
+that do either.
+
+If you have any concerns, you can contact me at jasonlotito@gmail.com and I will address
+the issue.
+= Privacy Policy = 
